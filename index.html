@@ -14,9 +14,22 @@
         <h2 class="m0 h3"><span role="img" aria-label="grin">🦖</span>
           <span role="img" aria-label="neutral">🦖</span><span role="img" aria-label="sad">🦖</span></h2>
         <h1 class="my1 h2">Бегущий динозавр</h1>
-        <p class="m0">Известная браузерная игра </p>
+        <p class="m0">Для начала игры нажмите пробел</p>
       </header>
       <main><div class="py1"></div></main>
         
         </body>
+      
+      
+      <script>
+    document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.keyCode == 32) {
+        var box = document.getElementById("messageBox");
+        box.style.visibility="hidden";
+    }
+};
+</script>
+      
+      
 </html>
